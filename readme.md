@@ -174,7 +174,7 @@ npm i prettier eslint-plugin-prettier --save-dev
 
 ## Автоматическая перезагрузка при изменении кода
 
-Выполнить
+Установить
 
 ```
 npm i webpack-dev-server --save-dev
@@ -199,4 +199,42 @@ output: {
   ...,
   publicPath: 'dist',
 },
+```
+
+## Установка React
+
+Установить пакеты
+
+```
+npm i react react-dom
+```
+
+```
+npm i @babel/preset-react --save-dev
+```
+
+В **index.html** добавить div для рендера приложения
+
+```
+<div id="root"></div>
+```
+
+Изменить **.babelrc** чтобы транспилировать jsx в обыкновенный JavaScript
+
+```
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+```
+
+Изменить **src/index.js**
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const Test = () => <div>test</div>;
+
+ReactDOM.render(<Test />, document.getElementById('root'));
+
 ```

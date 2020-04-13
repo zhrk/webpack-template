@@ -1,13 +1,6 @@
-import test4 from './test';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-let a = 1;
-const adas = '123123';
-a = 2;
+const Test = () => <div>123</div>;
 
-const asd = 2;
-const test2 = '1232';
-const b = 2;
-
-const test = () => a + b;
-
-console.log(test());
+ReactDOM.render(<Test />, document.getElementById('root'));
