@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development"
+    "dev": "webpack-dev-server --open --mode development"
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "eslint-plugin-react-hooks": "^2.5.0",
     "prettier": "^2.0.4",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
   }
 }
