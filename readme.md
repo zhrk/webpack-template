@@ -209,6 +209,14 @@ devServer: {
 },
 ```
 
+Чтобы выключить логи в консоли
+
+```
+devServer: {
+  clientLogLevel: 'silent',
+},
+```
+
 ## Установка React
 
 Установить пакеты
