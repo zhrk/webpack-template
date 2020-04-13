@@ -201,6 +201,14 @@ output: {
 },
 ```
 
+Так же если нужно переместить index.html надо изменить конфиг дев-сервера
+
+```
+devServer: {
+  contentBase: path.join(__dirname, 'public'),
+},
+```
+
 ## Установка React
 
 Установить пакеты
