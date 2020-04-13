@@ -180,7 +180,7 @@ npm i prettier eslint-plugin-prettier --save-dev
 npm i webpack-dev-server --save-dev
 ```
 
-И заменить
+Заменить
 
 ```
 "dev": "webpack --mode development"
@@ -190,4 +190,13 @@ npm i webpack-dev-server --save-dev
 
 ```
 "dev": "webpack-dev-server --open --mode development"
+```
+
+И в **webpack.config.js** добавить publicPath чтобы webpack-dev-server знал куда смотреть когда запускает проект
+
+```
+output: {
+  ...,
+  publicPath: 'dist',
+},
 ```
