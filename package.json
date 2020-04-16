@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --open --mode development"
+    "dev": "webpack-dev-server --mode development"
   },
   "author": "",
   "license": "ISC",

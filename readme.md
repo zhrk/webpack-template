@@ -96,7 +96,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/, // правило справедливо для всех .js файлов
-        loader: "babel-loader", // все файлы которые прошли проверку на регулярное выражение будут обработаны этим лоадером
+        use: ['babel-loader'], // все файлы которые прошли проверку на регулярное выражение будут обработаны этим лоадером
         exclude: /node_modules/, // игнорировать папку с зависимостями
       },
     ],
@@ -189,7 +189,7 @@ npm i webpack-dev-server --save-dev
 на
 
 ```
-"dev": "webpack-dev-server --open --mode development"
+"dev": "webpack-dev-server --mode development"
 ```
 
 И в **webpack.config.js** добавить publicPath чтобы webpack-dev-server знал куда смотреть когда запускает проект
