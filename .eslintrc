@@ -6,6 +6,13 @@
   },
   "rules": {
     "prettier/prettier": "error",
-    "react/jsx-filename-extension": 0
+    "react/jsx-filename-extension": 0,
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": false
+      }
+    ]
   }
 }
