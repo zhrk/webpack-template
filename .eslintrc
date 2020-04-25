@@ -13,6 +13,7 @@
       {
         "requireReturnForObjectLiteral": false
       }
-    ]
+    ],
+    "arrow-parens": ["error", "as-needed"]
   }
 }
