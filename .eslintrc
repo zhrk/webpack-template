@@ -1,6 +1,14 @@
 {
   "parser": "@typescript-eslint/parser",
-  "extends": ["airbnb"],
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint"
+  ],
+  "plugins": ["prettier", "@typescript-eslint"],
   "env": {
     "browser": true
   },
@@ -12,8 +20,16 @@
     }
   },
   "rules": {
+    "prettier/prettier": "error",
     "import/extensions": "off",
     "react/jsx-filename-extension": 0,
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "arrow-body-style": [
+      "error",
+      "as-needed",
+      {
+        "requireReturnForObjectLiteral": false
+      }
+    ]
   }
 }
