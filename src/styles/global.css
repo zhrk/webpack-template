@@ -10,6 +10,6 @@ body {
   color: #fff;
 }
 
-:global #root {
+#root {
   height: 100%;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './styles.css';
+import styles from './styles.scss';
 
 const Root: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +8,7 @@ const Root: React.FC = () => {
 
   return (
     <div className={styles.container}>
-      <button type="button" onClick={() => handleClick(true)}>
+      <button type="button" onClick={() => handleClick(!isOpen)}>
         {isOpen ? 'Close' : 'Open'}
       </button>
       <h1>

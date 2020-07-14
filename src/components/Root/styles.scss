@@ -5,4 +5,10 @@
   flex-direction: column;
   justify-content: center;
   background-color: #282c34;
+
+  & button {
+    background: #fff;
+    border: 0;
+    font-size: 20px;
+  }
 }
